@@ -36,6 +36,12 @@ Méthodes
 
 exemple : index_with_nan = data_conso.index[data_conso.loc[:,'Année'].isnull()]
 
+
+méthode .str.replace pour remplacer du texte dans une colonne.
+exemple : 
+source : https://www.youtube.com/watch?v=KokJHxiE14s&ab_channel=RobMulla à 5:40
+
+
 # Matplotlib
 
 
