@@ -1,11 +1,4 @@
-# Matplotlib
 
-faire des subplots
-
-exemple : deux plots côte à côte
-source : https://www.youtube.com/watch?v=KokJHxiE14s&ab_channel=RobMulla à 7:51
-
-# Pandas
 
 
 ## Subsetting a dataset
