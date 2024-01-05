@@ -5,24 +5,26 @@ pd.set_option('display.max_columns', None)
 ## récupérer la liste des intitulés de colonnes
 df.columns.tolist()
 
-## Subsetting a dataset
+## Faire un subset d'un dataset
 
-#cols = ['','',...]
-#df[cols]
+cols = ['','',...] # on choisit les colonnes qu'on veut garder dans df
+df[cols] # on appelle dans df
 
-## Querying to find where the missing values come from
+# Nettoyer les données
 
-#(df[cols].query('column_name.isna()')
+## faire une recherche (query) pour trouver d'où viennent les valeurs manquantes
+
+(df[cols].query('column_name.isna()')
 
 
-## filling a Nan column and make it to a categoy
+## remplir une colonne de Nan et en faire une catégorie (ex: catégorie "Autres")
 
  df[cols].assign(column_name = df.column_name.fillna('Other').astype('category'))
 
 ## Méthodes
 
-.loc
-.index : permet de récupérer l'index des lignes en attribut
+* .loc
+* .index : permet de récupérer l'index des lignes en attribut
 
 exemple : index_with_nan = data_conso.index[data_conso.loc[:,'Année'].isnull()]
 
@@ -30,7 +32,6 @@ exemple : index_with_nan = data_conso.index[data_conso.loc[:,'Année'].isnull()]
 méthode .str.replace pour remplacer du texte dans une colonne.
 exemple : 
 source : https://www.youtube.com/watch?v=KokJHxiE14s&ab_channel=RobMulla à 5:40
-
 
 # Matplotlib
 
