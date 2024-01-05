@@ -1,5 +1,9 @@
+# Etapes souvent utiles au démarrage d'un notebook
+## montrer toutes les colonnes dans l'affichage
+pd.set_option('display.max_columns', None)
 
-
+## récupérer la liste des intitulés de colonnes
+df.columns.tolist()
 
 ## Subsetting a dataset
 
