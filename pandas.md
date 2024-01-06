@@ -22,15 +22,19 @@ df[cols] # on appelle dans df
  df[cols].assign(column_name = df.column_name.fillna('Other').astype('category'))
 
 ## renommer des colonnes
-
-df.rename({'2023':'investissement_2023',
-                    '2024':'investissement_2024',
+### manuellement
+df.rename({'2023':'investissement_2023','2024':'investissement_2024',
                     '2025':'investissement_2025',
                     '2026':'investissement_2026',
                     '2027':'investissement_2027',
                     '2028':'investissement_2028',
                     '2029':'investissement_2029',
                     '2030':'investissement_2030'}, **axis = 1**)
+### en masse
+
+
+
+Voir notamment https://medium.com/codex/how-to-batch-rename-columns-in-pandas-based-on-patterns-7d2382b5fc9a
 
 ## Méthodes
 
