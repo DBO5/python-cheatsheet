@@ -36,6 +36,11 @@ df.rename({'2023':'investissement_2023','2024':'investissement_2024',
 
 Voir notamment https://medium.com/codex/how-to-batch-rename-columns-in-pandas-based-on-patterns-7d2382b5fc9a
 
+##Récupérer une liste avec le nom des colonnes
+
+df.columns.to_list()
+
+
 ## Méthodes
 
 * .loc
