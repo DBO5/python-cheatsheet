@@ -10,6 +10,10 @@ df.columns.tolist()
 cols = ['','',...] # on choisit les colonnes qu'on veut garder dans df
 df[cols] # on appelle dans df
 
+# insérer une image html dans le markdown
+
+<img src="http://ac.matra.free.fr/FB/20240322EB.jpg" alt="imagepixels" style="width:200px;"/>
+
 # Nettoyer les données
 
 ## faire une recherche (query) pour trouver d'où viennent les valeurs manquantes
