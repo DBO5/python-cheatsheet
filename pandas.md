@@ -43,7 +43,20 @@ Voir notamment https://medium.com/codex/how-to-batch-rename-columns-in-pandas-ba
 ##Récupérer une liste avec le nom des colonnes
 
 df.columns.to_list()
+## snippet pour générer des noms de colonnes avec suffixes multiples
 
+annees = range(2010,2022)
+fluides = ['elec','gaz','RCU','fioul','totale']
+liste_DJU = []
+for annee in annees:
+    for fluide in fluides:
+        annee_conso_fluide_DJU = str(annee) + '-conso_' + fluide + '_DJU'
+        liste_DJU.append(annee_conso_fluide_DJU)
+print(liste_DJU)
+
+résultats :
+
+['2010-conso_elec_DJU', '2010-conso_gaz_DJU', '2010-conso_RCU_DJU', '2010-conso_fioul_DJU', '2010-conso_totale_DJU', '2011-conso_elec_DJU', '2011-conso_gaz_DJU', '2011-conso_RCU_DJU', '2011-conso_fioul_DJU', '2011-conso_totale_DJU', '2012-conso_elec_DJU', '2012-conso_gaz_DJU', '2012-conso_RCU_DJU', '2012-conso_fioul_DJU', '2012-conso_totale_DJU', '2013-conso_elec_DJU', '2013-conso_gaz_DJU', '2013-conso_RCU_DJU', '2013-conso_fioul_DJU', '2013-conso_totale_DJU', '2014-conso_elec_DJU', '2014-conso_gaz_DJU', '2014-conso_RCU_DJU', '2014-conso_fioul_DJU', '2014-conso_totale_DJU', '2015-conso_elec_DJU', '2015-conso_gaz_DJU', '2015-conso_RCU_DJU', '2015-conso_fioul_DJU', '2015-conso_totale_DJU', '2016-conso_elec_DJU', '2016-conso_gaz_DJU', '2016-conso_RCU_DJU', '2016-conso_fioul_DJU', '2016-conso_totale_DJU', '2017-conso_elec_DJU', '2017-conso_gaz_DJU', '2017-conso_RCU_DJU', '2017-conso_fioul_DJU', '2017-conso_totale_DJU', '2018-conso_elec_DJU', '2018-conso_gaz_DJU', '2018-conso_RCU_DJU', '2018-conso_fioul_DJU', '2018-conso_totale_DJU', '2019-conso_elec_DJU', '2019-conso_gaz_DJU', '2019-conso_RCU_DJU', '2019-conso_fioul_DJU', '2019-conso_totale_DJU', '2020-conso_elec_DJU', '2020-conso_gaz_DJU', '2020-conso_RCU_DJU', '2020-conso_fioul_DJU', '2020-conso_totale_DJU', '2021-conso_elec_DJU', '2021-conso_gaz_DJU', '2021-conso_RCU_DJU', '2021-conso_fioul_DJU', '2021-conso_totale_DJU']
 
 ## Méthodes
 
